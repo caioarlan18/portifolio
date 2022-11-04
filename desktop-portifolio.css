@@ -245,3 +245,16 @@
         left: 120px;
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1132px) {
+    .euft-1 img {
+        width: 280px;
+        height: 300px;
+        position: relative;
+        top: 70px;
+    }
+
+    .eumsm h1 {
+        font-size: 15px;
+    }
+}

@@ -17,6 +17,5 @@ let nome = document.querySelector('h1.nome')
 TypeWriter(nome)
 
 function nav() {
-    let itens = document.querySelector('#itens')
     itens.classList.remove('active')
 }

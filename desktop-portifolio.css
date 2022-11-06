@@ -216,7 +216,9 @@
 
     .pmob {
         display: flex;
+        margin-left: 50px;
         font-size: 30px;
+        margin-bottom: 30px;
     }
 
     .fim {
@@ -256,5 +258,11 @@
 
     .eumsm h1 {
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 662px) and (max-width: 992px) {
+    .projetos img {
+        width: 500px;
     }
 }

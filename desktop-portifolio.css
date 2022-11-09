@@ -54,6 +54,7 @@
 
     .segunda {
         display: flex;
+        max-width: 1700px;
     }
 
     h1.nome {
@@ -113,6 +114,7 @@
 
     .eumsm-1 {
         display: flex;
+        max-width: 1700px;
 
     }
 

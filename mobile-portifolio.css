@@ -161,6 +161,7 @@ h1.nome {
 .segunda {
     margin-top: 250px;
     width: 100%;
+    max-width: 1700px;
 }
 
 button.linkedin,

@@ -263,3 +263,19 @@
         width: 500px;
     }
 }
+
+@media screen and (min-width: 907px) and (max-width:991px) {
+    .hh {
+        position: relative;
+        right: 60px;
+    }
+}
+
+@media screen and (min-width: 775px) and (max-width:907px) {
+    .hh {
+
+        position: relative;
+        right: 30px;
+
+    }
+}

@@ -213,12 +213,13 @@ button.linkedin,
 .eumsm h1 {
     font-size: 30px;
     margin-top: 20px;
+
 }
 
 .eumsm p {
     font-weight: 300;
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
     font-size: 15px;
     width: 350px;
     line-height: 27px;
@@ -235,6 +236,7 @@ button.linkedin,
     border-left: 5px solid aquamarine;
     cursor: pointer;
     transition: 0.5s;
+
 
 
 
@@ -296,7 +298,7 @@ button.linkedin,
 .exp p {
     color: white;
     font-family: montserrat;
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
     color: #c4c4c4;
     width: 350px;

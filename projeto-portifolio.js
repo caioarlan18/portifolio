@@ -19,3 +19,11 @@ TypeWriter(nome)
 function nav() {
     itens.classList.remove('active')
 }
+function mudar() {
+    let body = document.querySelector('body')
+    let header = document.querySelector('.hd-1')
+    let menu = document.querySelector('#itens ul')
+    body.classList.toggle('mudar')
+    header.classList.toggle('mudar')
+    menu.classList.toggle('mudar')
+}

@@ -22,8 +22,9 @@ function nav() {
 function mudar() {
     let body = document.querySelector('body')
     let header = document.querySelector('.hd-1')
-    let menu = document.querySelector('#itens ul')
+    let menu = document.querySelector('#itens')
     body.classList.toggle('mudar')
     header.classList.toggle('mudar')
     menu.classList.toggle('mudar')
+    menu.classList.remove('active')
 }

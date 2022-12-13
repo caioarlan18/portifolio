@@ -408,3 +408,19 @@ h1.loja {
 .eumsm-1 {
     display: none;
 }
+
+.mudar {
+    background-color: rgb(37, 37, 37);
+
+}
+
+.texto1 {
+    color: blue;
+}
+
+.modo {
+    margin-left: 10px;
+    border: 3px aquamarine solid;
+    padding: 10px;
+    border-radius: 10px;
+}

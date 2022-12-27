@@ -3,18 +3,19 @@ function MenuClick() {
     itens.classList.toggle('active')
 }
 
-function TypeWriter(elemento) {
-    let textoArray = elemento.innerHTML.split('')
-    elemento.innerHTML = ''
+function TypeWriter() {
+    var nome = document.querySelector('h1.nome')
+    let textoArray = nome.innerHTML.split('')
+    nome.innerHTML = ''
     textoArray.forEach((letra, i) => {
         setTimeout(() => {
-            elemento.innerHTML += letra
+            nome.innerHTML += letra
         }, 95 * i)
     })
 
 }
-let nome = document.querySelector('h1.nome')
-TypeWriter(nome)
+
+TypeWriter()
 
 function nav() {
     itens.classList.remove('active')
@@ -28,3 +29,4 @@ function mudar() {
     menu.classList.toggle('mudar')
     menu.classList.remove('active')
 }
+

@@ -1,426 +1,393 @@
 * {
-    margin: 0 auto;
-    padding: 0 auto;
-
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #151515;
-    width: 100%;
+  background-color: #151515;
+  width: 100%;
 }
 
 .hd-1 {
-    height: 85px;
-    border-bottom: 2px solid #272727;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: #151515;
-    top: 0px;
-    z-index: 1;
+  height: 85px;
+  border-bottom: 2px solid #272727;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #151515;
+  top: 0;
+  z-index: 1;
 }
 
-
-
 .logo img {
-    margin-top: 25px;
-    cursor: pointer;
-    position: relative;
-    right: 70px;
-
+  margin-top: 25px;
+  cursor: pointer;
+  position: relative;
+  right: 70px;
 }
 
 #itens1 {
-    display: none;
+  display: none;
 }
 
 #icon img {
-    display: flex;
-    justify-content: right;
-    cursor: pointer;
-
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
 }
-
 #itens.active {
-    width: 2000px;
-    position: relative;
-    left: 0px;
-
+  width: 60%;
+  transition: 0.5s;
+  overflow-y: visible;
 }
-
 #itens {
-    display: block;
-    color: white;
-    position: relative;
-    left: -400px;
-    transition: 0.5s;
-
+  background-color: black;
+  width: 0;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  top: 87px;
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
 #itens ul {
-    list-style: none;
-    font-family: montserrat;
-    color: white;
-    cursor: pointer;
-    font-weight: 600;
-    background-color: black;
-    height: 100%;
-    position: fixed;
-    width: 60%;
-    z-index: 1;
-    top: 87px;
-
+  list-style: none;
+  font-family: montserrat;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  overflow: hidden;
+  height: 100%;
 }
-
 
 #itens a span {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
-
-
 #itens a {
-    display: flex;
-    align-items: center;
-    margin-right: 250px;
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
 }
 
 #itens span:hover {
-    color: aquamarine;
-    transition: 0.4s;
+  color: aquamarine;
+  transition: 0.4s;
 }
 
 #itens span {
-    margin-top: 50px;
-    font-size: 20px;
-
+  margin-top: 50px;
+  font-size: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-
+  text-decoration: none;
+  color: white;
 }
 
-
 .segunda h1 {
-    color: #c4c4c4;
-    font-family: montserrat;
-    text-align: center;
-    margin-top: 10px;
+  color: #c4c4c4;
+  font-family: montserrat;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .front {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .olá {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 h1.nome::after {
-    content: '|';
-    font-weight: 500;
-    color: white;
-    margin-left: 5px;
-    animation: piscar 0.6s infinite alternate
+  content: "|";
+  font-weight: 500;
+  color: white;
+  margin-left: 5px;
+  animation: piscar 0.6s infinite alternate;
 }
 
 @keyframes piscar {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    40% {
-        opacity: 1;
-    }
+  40% {
+    opacity: 1;
+  }
 
-    60% {
-        opacity: 0;
-    }
+  60% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 h1.nome {
-    color: aquamarine;
-    font-family: montserrat;
-    font-size: 50px;
+  color: aquamarine;
+  font-family: montserrat;
+  font-size: 50px;
 }
 
 .segunda {
-    margin-top: 250px;
-    width: 100%;
-    max-width: 1700px;
+  margin-top: 250px;
+  width: 100%;
+  max-width: 1700px;
 }
 
 button.linkedin,
 .github {
-    height: 50px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    font-family: montserrat;
-    border: 3px solid aquamarine;
-    border-radius: 10px;
-    width: 160px;
-    margin-left: 15px;
-    font-weight: 600;
-    font-size: 15px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-family: montserrat;
+  border: 3px solid aquamarine;
+  border-radius: 10px;
+  width: 160px;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 15px;
 }
-
 
 .linkedin:hover,
 .github:hover {
-    background-color: #272727;
-    transition: 0.4s;
+  background-color: #272727;
+  transition: 0.4s;
 }
 
-
-
 .button {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .home::before {
-    content: url(./imagem-açai/home_FILL0_wght400_GRAD0_opsz48.svg);
+  content: url(./imagem-açai/home_FILL0_wght400_GRAD0_opsz48.svg);
 }
 
 .eumsm {
-    display: flex;
-    flex-direction: column;
-    margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
 }
 
 .eumsm h1,
 .eumsm h2,
 .eumsm p {
-    color: #c4c4c4;
-    font-family: montserrat;
-
+  color: #c4c4c4;
+  font-family: montserrat;
 }
 
 .eumsm h1 {
-    font-size: 30px;
-    margin-top: 20px;
-
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .eumsm p {
-    font-weight: 300;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 15px;
-    width: 350px;
-    line-height: 27px;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  width: 350px;
+  line-height: 27px;
 }
 
 .eumsm h2 {
-    font-size: 17px;
-    margin-top: 20px;
+  font-size: 17px;
+  margin-top: 20px;
 }
 
 .euft img {
-    height: 300px;
-    width: 300px;
-    border-left: 5px solid aquamarine;
-    cursor: pointer;
-    transition: 0.5s;
-
-
-
-
+  height: 300px;
+  width: 300px;
+  border-left: 5px solid aquamarine;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .euft img:hover {
-    border-left: 5px solid aqua;
-    transition: 0.2s;
+  border-left: 5px solid aqua;
+  transition: 0.2s;
 }
-
 
 .eumsm button {
-    width: 190px;
-    background-color: transparent;
-    color: white;
-    border: 3px solid aquamarine;
-    margin-top: 30px;
-    height: 50px;
-    border-radius: 10px;
-    font-family: montserrat;
-    font-weight: 600;
-    font-size: 17px;
-    cursor: pointer;
-
+  width: 190px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid aquamarine;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
 }
-
-
-
 
 .eumsm button:hover {
-    background-color: #272727;
-    transition: 0.4s;
+  background-color: #272727;
+  transition: 0.4s;
 }
 
-
 ::-webkit-scrollbar {
-    width: 15px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: aquamarine;
-    border-radius: 3px;
+  background-color: aquamarine;
+  border-radius: 3px;
 }
 
 .exp {
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
 }
 
 .exp h1 {
-    color: #c4c4c4;
-    font-family: montserrat;
-    margin-top: 20px;
-    font-size: 30px;
-    text-align: center;
+  color: #c4c4c4;
+  font-family: montserrat;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .exp p {
-    color: white;
-    font-family: montserrat;
-    text-align: center;
-    margin-top: 30px;
-    color: #c4c4c4;
-    width: 350px;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 27px;
+  color: white;
+  font-family: montserrat;
+  text-align: center;
+  margin-top: 30px;
+  color: #c4c4c4;
+  width: 350px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
 }
 
 .projetos {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projetos h1 {
-    font-family: montserrat;
-    color: #c4c4c4;
-    margin-top: 30px;
-    font-weight: bold;
-    text-align: center;
+  font-family: montserrat;
+  color: #c4c4c4;
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .projetos img {
-    width: 80%;
-    display: flex;
-    border-left: solid 7px aquamarine;
-    margin-top: 30px;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  width: 80%;
+  display: flex;
+  border-left: solid 7px aquamarine;
+  margin-top: 30px;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .projetos img:hover {
-    border-left: 5px solid aqua;
-    transition: 0.3s;
+  border-left: 5px solid aqua;
+  transition: 0.3s;
 }
 
 .projetos img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.4s;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .projetos h2 {
-    font-family: montserrat;
-    color: #c4c4c4;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 400;
-    width: 350px;
+  font-family: montserrat;
+  color: #c4c4c4;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 350px;
 }
 
 .projetos button {
-    background-color: transparent;
-    color: white;
-    border: 3px solid aquamarine;
-    border-radius: 10px;
-    font-family: montserrat;
-    width: 160px;
-    font-weight: 600;
-    height: 50px;
-    margin-top: 30px;
-    cursor: pointer;
-    font-size: 15px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid aquamarine;
+  border-radius: 10px;
+  font-family: montserrat;
+  width: 160px;
+  font-weight: 600;
+  height: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .projetos button:hover {
-    background-color: #272727;
-    transition: 0.4s;
+  background-color: #272727;
+  transition: 0.4s;
 }
 
 .projetos p {
-    font-family: montserrat;
-    color: aquamarine;
-    margin-top: 30px;
-    text-align: center;
-    width: 300px;
+  font-family: montserrat;
+  color: aquamarine;
+  margin-top: 30px;
+  text-align: center;
+  width: 300px;
 }
 
 .fim h1 {
-    color: white;
-    font-family: montserrat;
-    margin-top: 50px;
-    font-size: 20px;
-    margin-bottom: 50px;
-    font-weight: 500;
+  color: white;
+  font-family: montserrat;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: 500;
 }
 
 h1.loja {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fim {
-    display: flex;
+  display: flex;
 }
 
 .fim span {
-    color: aquamarine;
+  color: aquamarine;
 }
 
 .imgse {
-    display: none;
+  display: none;
 }
 
 .eumsm-1 {
-    display: none;
+  display: none;
 }
 
 .mudar {
-    background-color: rgb(37, 37, 37);
-
+  background-color: rgb(37, 37, 37);
 }
 
 .texto1 {
-    color: blue;
+  color: blue;
 }
 
 .modo {
-    margin-left: 10px;
-    border: 3px aquamarine solid;
-    padding: 10px;
-    border-radius: 10px;
+  margin-left: 10px;
+  border: 3px aquamarine solid;
+  padding: 10px;
+  border-radius: 10px;
 }

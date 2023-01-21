@@ -41,7 +41,7 @@ body {
   cursor: pointer;
 }
 #itens.active {
-  width: 80%;
+  width: 60%;
   transition: 0.5s;
   overflow-y: visible;
 }

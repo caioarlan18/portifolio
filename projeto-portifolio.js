@@ -14,9 +14,9 @@ function TypeWriter() {
     })
 
 }
-setTimeout(()=>{
-   TypeWriter()
-},1500)
+
+TypeWriter()
+
 
 
 function nav() {
